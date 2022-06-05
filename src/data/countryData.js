@@ -4,7 +4,7 @@ const countryData = {
             id: 1,
             name: 'USA',
             capital: 'Washington',
-            cost: 1250,
+            cost: 4354,
             details: 'United states are among the most visited country in the world.',
             img: 'washington.jpg',
         },
