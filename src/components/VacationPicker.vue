@@ -108,6 +108,10 @@ export default {
         },
         filterCountries(){
             this.filteredCountries = this.countryData.countries.filter(country => country.cost < this.selectedCost);
+            // console.log(this.filteredCountries);
+            console.log(this.countryData.countries.filter.country.cost);
+            // console.log(this.filteredCountries);
+            // console.log(this.filteredCountries);
         }
     },
     computed: {
