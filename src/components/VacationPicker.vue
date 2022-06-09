@@ -74,13 +74,13 @@ export default {
         return {
             countryData,
             header: 'Vue Vacation Picker',
-            counter: 0,
-            count: 0,
-            number1: 1,
-            number2: 2,
-            isDisabled: true,
-            number: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-            msg: '<h2>Hallo</h2>',
+            // counter: 0,
+            // count: 0,
+            // number1: 1,
+            // number2: 2,
+            // isDisabled: true,
+            // number: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+            // msg: '<h2>Hallo</h2>',
             selectedCountryIndex: 2,
             newCountry: '',
             newCountries: [],
@@ -90,15 +90,15 @@ export default {
         }
     },
     methods: {
-        increment() {
-            this.count++;
-        },
-        decrement() {
-            this.count--;
-        },
-        cCountry(country) {
-            alert(`You selected: ${country.name}`)
-        },
+        // increment() {
+        //     this.count++;
+        // },
+        // decrement() {
+        //     this.count--;
+        // },
+        // cCountry(country) {
+        //     alert(`You selected: ${country.name}`)
+        // },
         selectCountry(index) {
             this.selectedCountryIndex = index;
         },
@@ -107,8 +107,7 @@ export default {
             this.newCountry;
         },
         filterCountries(){
-            this.filteredCountries = this.countryData.countries
-            .filter(country => country.cost < this.selectedCost);
+            this.filteredCountries = this.countryData.countries.filter(country => country.cost < this.selectedCost);
         }
     },
     computed: {
