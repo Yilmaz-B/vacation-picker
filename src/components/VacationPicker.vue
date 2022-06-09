@@ -6,6 +6,16 @@
                 {{country.id}} - {{country.name}}
             </li><br><br><br>
         </ul>
+        <h2>Selected:</h2>
+        <ul class="list-group">
+            <li class="list-group-item">{{selectedCountry.id}}</li>
+            <li class="list-group-item">{{selectedCountry.name}}</li>
+            <li class="list-group-item">{{selectedCountry.capital}}</li>
+            <li class="list-group-item">{{selectedCountry.details}}</li>
+            <li class="list-group-item">€{{selectedCountry.cost}}</li>
+            <li class="list-group-item" v-if="isExpensive"><span class="badge alert-danger badge-pill">Expensive!</span></li>
+            <li class="list-group-item"><img :src="getImgUrl(selectedCountry.img)" :alt="selectedCountry.img" class="img-fluid"></li>
+        </ul>
         <h2>Other Countries:</h2>
         <input type="text" v-model="newCountry" @keyup.enter="addCountry(newCountry)" class="form-control-lg" placeholder="New country...">
         <button @click="addCountry(newCountry)" class="btn btn-info">Add Country</button>
@@ -22,15 +32,7 @@
             <li v-for="(country, index) in filteredCountries" :key="index" class="list-group-item">{{country.name}} (EUR: {{country.cost}})</li>
         </ul><br><br><br>
 
-        <h2>Selected:</h2>
-        <ul class="list-group">
-            <li class="list-group-item">{{selectedCountry.id}}</li>
-            <li class="list-group-item">{{selectedCountry.name}}</li>
-            <li class="list-group-item">{{selectedCountry.capital}}</li>
-            <li class="list-group-item">{{selectedCountry.details}}</li>
-            <li class="list-group-item" v-if="isExpensive"><span class="badge alert-danger badge-pill">Expensive!</span></li>
-            <li class="list-group-item"><img :src="getImgUrl(selectedCountry.img)" :alt="selectedCountry.img" class="img-fluid"></li>
-        </ul>
+        
     </div>
 
 

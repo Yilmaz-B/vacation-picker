@@ -23,6 +23,14 @@ const countryData = {
             cost: 2235,
             details: 'Australia is known for it\'s many exotic animals.',
             img: 'sydney.jpg'
+        },
+        {
+            id: 4,
+            name: 'Turkiye',
+            capital: 'Istanbul',
+            cost: 1400,
+            details: 'AMK.',
+            img: 'sydney.jpg'
         }
     ]
 };
