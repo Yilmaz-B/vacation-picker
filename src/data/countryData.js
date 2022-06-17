@@ -29,8 +29,8 @@ const countryData = {
             name: 'Turkiye',
             capital: 'Istanbul',
             cost: 1400,
-            details: 'AMK.',
-            img: 'sydney.jpg'
+            details: 'Turkiye is a beautifull country to visit!',
+            img: 'turkiye.jpg'
         }
     ]
 };
