@@ -16,7 +16,7 @@
             <li class="list-group-item" v-if="isOnSale"><span class="badge alert-success badge-pill">On Sale!</span></li>
             <li class="list-group-item"><img :src="getImgUrl(country.img)" class="img-fluid"></li>
             <li class="list-group-item">
-                <span class="float-right badge alert-secondary badge-pill" v-if="country.rating !== 0">{{country.rating}}</span>
+                <span class="float-end badge alert-secondary badge-pill" v-if="country.rating !== 0">{{country.rating}}</span>
             </li>
         </ul>
 </template>

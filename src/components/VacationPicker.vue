@@ -24,7 +24,9 @@
                 </ul>
             </div>
             <div class="col-sm-6">
+                <CollapsibleSection>
                 <CountryDetail v-if="selectedCountry" @rating="onRating($event)" :country="selectedCountry" />
+                </CollapsibleSection>
             </div>
         </div>
     </div>
@@ -33,12 +35,14 @@
 <script>
 import countryData from '@/data/countryData';
 import CountryDetail from '@/components/CountryDetail';
+import CollapsibleSection from "@/components/CollapsibleSection";
 
 export default {
     name: 'VacationPicker',
     components: {CountryDetail},
     data(){
         return {
+            CollapsibleSection,
             CountryDetail,
             countryData,
             header: 'Vue Vacation Picker',
