@@ -6,6 +6,15 @@ export default {
         }
     },
     created(){
-        console.log('Components lifecycle hook created() called');
+        console.log('create');
+    },
+    updated(){
+        console.log('update');
+    },
+    mounted(){
+        console.log("mounted");
+    },
+    unmounted(){
+        console.log("unmounted")
     }
 }

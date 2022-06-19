@@ -7,6 +7,7 @@ const countryData = {
             cost: 4354,
             details: 'United states are among the most visited country in the world.',
             img: 'washington.jpg',
+            rating: 0
         },
         {
             id: 2,
@@ -14,7 +15,8 @@ const countryData = {
             capital: 'Amsterdam',
             cost: 795,
             details: 'The capital of the Netherlands, Amsterdam is over 1000 years old.',
-            img: 'amsterdam.jpg'
+            img: 'amsterdam.jpg',
+            rating: 0
         },
         {
             id: 3,
@@ -22,7 +24,8 @@ const countryData = {
             capital: 'Sydney',
             cost: 2235,
             details: 'Australia is known for it\'s many exotic animals.',
-            img: 'sydney.jpg'
+            img: 'sydney.jpg',
+            rating: 0
         },
         {
             id: 4,
@@ -30,7 +33,8 @@ const countryData = {
             capital: 'Istanbul',
             cost: 1400,
             details: 'Turkiye is a beautifull country to visit!',
-            img: 'turkiye.jpg'
+            img: 'turkiye.jpg',
+            rating: 0
         }
     ]
 };
