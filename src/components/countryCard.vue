@@ -1,18 +1,17 @@
 <template>
-	<div class="card kaart">
+	<div class="card map">
 		<div class="d-flex w-100 countryCardTop">
-			<div class="countryCardName"
-				><h4 class="card-title p-2"
-					><strong> {{ selectedCountry.name }}</strong></h4
-				></div
-			>
+			<div class="countryCardName">
+				<h4 class="card-title p-2">
+					<strong> {{ selectedCountry.name }}</strong>
+				</h4>
+			</div>
 			<div class="cardIcon">
 				<router-link to="/">
 					<button type="button" class="x-font btn-close"></button>
 				</router-link>
 			</div>
 		</div>
-
 		<img :src="Img(selectedCountry.img)" class="card-img-center" alt="..." />
 		<div class="card-body">
 			<p class="card-text text-center">
@@ -44,7 +43,6 @@
 	export default {
 		mixins: [vacationMixin],
 		name: "countryCard",
-
 		computed: {
 			routeId() {
 				return this.$route.params.id;
@@ -65,7 +63,7 @@
 	};
 </script>
 <style scoped>
-	.kaart {
+	.map {
 		width: 50rem !important;
 	}
 	img {
@@ -88,8 +86,7 @@
 		top: 20%;
 	}
 
-	.cardIcon:hover,
-	.likeBtn:hover {
+	.cardIcon:hover, .likeBtn:hover {
 		cursor: pointer;
 		transform: scale(1.2);
 		font-weight: bolder !important;
@@ -99,5 +96,9 @@
 
 	.dislike {
 		margin-left: 15px;
+	}
+
+	.others {
+		
 	}
 </style>
