@@ -14,7 +14,7 @@
                 <ul class="list-group">
                     <li class="list-group-item" v-for="(country, index) in newCountries" :key="index">{{country}}</li>
                     <h3>{{newCountry}}</h3>
-                </ul><br><br>
+                </ul>
                 <ul class="list-group">
                     <h2>Destinations cheaper than:</h2>
                         <select class="form-control-lg" v-model="selectedCost" @change="filterCountries()">
@@ -92,5 +92,9 @@ export default {
 <style>
 img {
     width: 500px;
+}
+
+.list-group{
+    margin-top: 50px;
 }
 </style>
