@@ -1,26 +1,28 @@
 <template>
-  <VacationPicker />
+	<div class="container">
+		<h1 class="text-center text-white pb-3">{{ header }}</h1>
+		<router-view />
+	</div>
 </template>
 
 <script>
-import VacationPicker from '@/components/VacationPicker.vue';
-
-
-export default {
-  name: 'App',
-  components: {
-    VacationPicker,
-  },
-}
+	export default {
+		name: "App",
+		components: {},
+		data() {
+			return {
+				header: "Vue vacation Picker",
+			};
+		},
+	};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+	.container {
+		height: 100vh !important;
+	}
+  
+  body {
+    background-color: bisque !important;
+  }
 </style>

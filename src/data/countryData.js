@@ -1,42 +1,29 @@
 const countryData = {
-    countries: [
-        {
-            id: 1,
-            name: 'USA',
-            capital: 'Washington',
-            cost: 4354,
-            details: 'United states are among the most visited country in the world.',
-            img: 'washington.jpg',
-            rating: 0
-        },
-        {
-            id: 2,
-            name: 'Netherlands',
-            capital: 'Amsterdam',
-            cost: 795,
-            details: 'The capital of the Netherlands, Amsterdam is over 1000 years old.',
-            img: 'amsterdam.jpg',
-            rating: 0
-        },
-        {
-            id: 3,
-            name: 'Australia',
-            capital: 'Sydney',
-            cost: 2235,
-            details: 'Australia is known for it\'s many exotic animals.',
-            img: 'sydney.jpg',
-            rating: 0
-        },
-        {
-            id: 4,
-            name: 'Turkiye',
-            capital: 'Istanbul',
-            cost: 1400,
-            details: 'Turkiye is a beautifull country to visit!',
-            img: 'turkiye.jpg',
-            rating: 0
-        }
-    ]
+	countries: [
+		{
+			id: 1,
+			name: "USA",
+			capital: "Washington",
+			cost: 1250,
+			details: "United States are among the most visited countries in the world",
+			img: "washington.jpg",
+		},
+		{
+			id: 2,
+			name: "Netherlands",
+			capital: "Amsterdam",
+			cost: 896,
+			details: "The capital of the Netherlands",
+			img: "amsterdam.jpg",
+		},
+		{
+			id: 3,
+			name: "Germany",
+			capital: "Berlin",
+			cost: 2350,
+			details: "The capital of Germany",
+			img: "berlin.jpg",
+		},
+	],
 };
-
 export default countryData;
