@@ -15,10 +15,10 @@
 		<img :src="Img(selectedCountry.img)" class="card-img-center" alt="..." />
 		<div class="card-body">
 			<p class="card-text text-center">
-				Details: {{ selectedCountry.details }}
+				Capital: <strong>{{ selectedCountry.capital }}</strong>
 			</p>
 			<p class="card-text text-center">
-				Capital: <strong>{{ selectedCountry.capital }}</strong>
+				{{ selectedCountry.details }}
 			</p>
 			<p class="text-center card-text">
 				Price: €{{ selectedCountry.cost}}
